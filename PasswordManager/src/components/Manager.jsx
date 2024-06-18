@@ -104,7 +104,7 @@ const Manager = () => {
 
                     </div>
                     <div className='flex justify-center'>
-                        <button className='flex justify-center items-center bg-gradient-to-br from-purple-600 to-violet-500 rounded-full px-2 py-2 w-fit gap-1  border-2 border-purple-600' onClick={savePassword}>
+                        <button className='flex justify-center items-center bg-purple-600 rounded-full px-2 py-2 w-fit gap-1  border-2 border-purple-600 hover:bg-purple-700' onClick={savePassword}>
                             <script src="https://cdn.lordicon.com/lordicon.js"></script>
                             <lord-icon
                                 src="https://cdn.lordicon.com/xtnsvhie.json"
