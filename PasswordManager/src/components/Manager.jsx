@@ -81,7 +81,7 @@ const Manager = () => {
 
                 <h1 className='text-4xl font-bold text-center text-white'> <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-4xl'>&lt;</span>
                     Key
-                    <span className='text-white text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Safe/&gt;</span></h1>
+                    <span className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Safe/&gt;</span></h1>
                 <p className='text-lg text-center f text-white font-mono text-xl'>Personal local password manager</p>
 
                 <div className="flex flex-col p-4 text-black gap-7">

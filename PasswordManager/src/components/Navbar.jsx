@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className='bg-slate-800'>
         <div className="mycontainer flex justify-between items-center px-5 h-10">
-        <div className='logo font-bold text-white text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
+        <div className='logo font-bold text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
             <span className='text-2xl'>&lt;</span>
             Key
             <span className='text-2xl'>Safe/&gt;</span>
