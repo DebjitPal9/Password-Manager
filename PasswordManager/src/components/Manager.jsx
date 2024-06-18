@@ -52,9 +52,11 @@ const Manager = () => {
     }
 
     const deletePassword = (id) => {
+        if(confirm("Do you really wanna delete!?")){
             // toast('Password deleted');
             setPasswordArray(passwordArray.filter((item) => item.id !== id)); localStorage.setItem("passwords", JSON.stringify(passwordArray.filter((item) => item.id !== id)))
             toast.error("Password Deleted")
+        }
     }
     const editPassword = (id) => {
         // toast('Edit it!');
