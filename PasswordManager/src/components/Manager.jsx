@@ -79,24 +79,24 @@ const Manager = () => {
             
             <div className="p-2 md:p-0 md:mycontainer min-h-[80vh]">
 
-                <h1 className='text-green text-4xl font-bold text-center'> <span className='text-green-700 text-4xl'>&lt;</span>
-                    Pass
-                    <span className='text-green-700 text-4xl'>Man/&gt;</span></h1>
-                <p className='text-green-700 text-lg text-center f'>Least secured password manager you will not need</p>
+                <h1 className='text-4xl font-bold text-center text-white'> <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-4xl'>&lt;</span>
+                    Key
+                    <span className='text-white text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Safe/&gt;</span></h1>
+                <p className='text-lg text-center f text-white font-mono text-xl'>Personal local password manager</p>
 
                 <div className="flex flex-col p-4 text-black gap-7">
 
-                    <input type="text" className='rounded-full border w-full border-green-500 px-4 py=1' name="site" id="site" placeholder='Enter URL' value={form.site} onChange={handleChange} />
+                    <input type="text" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com' name="site" id="site" placeholder='Enter URL' value={form.site} onChange={handleChange} />
 
                     <div className='flex flex-col md:flex-row w-full justify-between gap-10'>
-                        <input type="text" className='rounded-full border w-full border-green-500 px-4 py=1' name="username" id="username" placeholder='Enter Username' value={form.username} onChange={handleChange} />
+                        <input type="text" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' name="username" id="username" placeholder='Enter Username' value={form.username} onChange={handleChange} />
 
-                        <div className='relative'>
-                            <input type="password" className='rounded-full border w-full border-green-500 px-4 py=1' name="password" id="password" placeholder='Enter Password' value={form.password} onChange={handleChange} ref={passwordRef} />
+                        <div className='relative w-full'>
+                            <input type="password" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' name="password" id="password" placeholder='Enter Password' value={form.password} onChange={handleChange} ref={passwordRef} />
 
                             <span className='flex absolute right-[2px] bottom-[1px] top-[1px] cursor-pointer' onClick={showPassword} >
 
-                                <img className='px-1 py-0.5' width={30} src="icons/63568.png" ref={ref}>
+                                <img className='px-1 py-0.5' width={35} height={8} src="icons/63568.png" ref={ref}>
                                 </img>
 
                             </span>
@@ -104,7 +104,7 @@ const Manager = () => {
 
                     </div>
                     <div className='flex justify-center'>
-                        <button className='flex justify-center items-center bg-green-500 rounded-full px-2 py-2 w-fit gap-1 hover:bg-green-700 border-2 border-slate-700' onClick={savePassword}>
+                        <button className='flex justify-center items-center bg-gradient-to-br from-purple-600 to-violet-500 rounded-full px-2 py-2 w-fit gap-1  border-2 border-purple-600' onClick={savePassword}>
                             <script src="https://cdn.lordicon.com/lordicon.js"></script>
                             <lord-icon
                                 src="https://cdn.lordicon.com/xtnsvhie.json"
@@ -114,11 +114,11 @@ const Manager = () => {
                 </div>
 
                 <div className="passwords">
-                    <h2 className='font-bold text-xl py-2'>Saved Passwords</h2>
+                    <h2 className='font-bold font-mono text-xl py-2 text-white'>Saved Passwords</h2>
                     {passwordArray.length === 0 && <div>Nothing to show</div>}
                     {passwordArray.length != 0 &&
                         <table className="table-auto w-full rounded-md overflow-hidden">
-                            <thead className='bg-green-800 text-white'>
+                            <thead className='bg-gradient-to-br from-purple-600 to-purple-900 text-white font-mono'>
                                 <tr>
                                     <th>Website</th>
                                     <th>Username</th>
@@ -126,11 +126,11 @@ const Manager = () => {
                                     <th>Edit/Delete</th>
                                 </tr>
                             </thead>
-                            <tbody className='bg-purple-100 '>
+                            <tbody className='bg-purple-100 bg-gradient-to-br from-fuchsia-700 to-purple-700'>
                                 {passwordArray.map((item, index) =>
                                     <tr key={index}>
 
-                                        <td className='py-2 border border-white text-center w-64'>
+                                        <td className='py-2 border border-purple-800 text-center w-64'>
                                             <div className='flex justify-center ' >
                                                 <nav><a href={item.site} target='_blank'>{item.site}</a></nav>
                                                 <div className='size-7 cursor-pointer' onClick={() => copyText(item.site)}>
@@ -143,7 +143,7 @@ const Manager = () => {
                                                 </div>
                                             </div>
                                         </td >
-                                        <td className='py-2 border border-white text-center w-32'>
+                                        <td className='py-2 border border-purple-800 text-center w-32'>
                                             <div className='flex justify-center ' >
                                                 <nav>{item.username}</nav>
                                                 <div className='size-7 cursor-pointer' onClick={() => copyText(item.username)}>
@@ -156,7 +156,7 @@ const Manager = () => {
                                                 </div>
                                             </div>
                                         </td >
-                                        <td className='py-2 border border-white text-center w-32'>
+                                        <td className='py-2 border border-purple-800 text-center w-32'>
                                             <div className='flex justify-center '>
                                                 <nav className='font-bold'>.....</nav>
                                                 <div className='size-7 cursor-pointer' onClick={() => copyText(item.password)}>
@@ -169,7 +169,7 @@ const Manager = () => {
                                                 </div>
                                             </div>
                                         </td >
-                                        <td className='py-2 border border-white text-center w-32'>
+                                        <td className='py-2 border border-purple-800 text-center w-32'>
                                             <div className='flex justify-center'>
                                                 <div onClick={() => editPassword(item.id)}>
                                                     <script src="https://cdn.lordicon.com/lordicon.js"></script>
