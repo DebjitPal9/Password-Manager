@@ -1,5 +1,5 @@
 # Password-Manager
- Web based password manager that saves your passwords locally
+ Browser based password manager that saves your passwords locally
  Deployed using netlify
  Icon courtesy : Lordicons https://lordicon.com/
 
