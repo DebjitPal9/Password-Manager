@@ -76,7 +76,7 @@ const Manager = () => {
     return (
         <>
             <Toaster/>
-            <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+            {/* <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div> */}
             
             <div className="p-2 md:p-0 md:mycontainer min-h-[80vh]">
 
@@ -119,7 +119,8 @@ const Manager = () => {
                     <h2 className='font-mono text-xl py-2 text-white'>Saved Passwords</h2>
                     {passwordArray.length === 0 && <div className='py-2 text-white'>Nothing to show</div>}
                     {passwordArray.length != 0 &&
-                        <table className="table-auto w-full rounded-md overflow-hidden font-mono">
+                     <div className='relative overflow-x-auto rounded-2xl' >
+                        <table className="w-full text-sm rtl:text-right text-gray-500 dark:text-gray-400 ">
                             <thead className='bg-gradient-to-br from-purple-600 to-purple-900 text-white'>
                                 <tr>
                                     <th>Website</th>
@@ -198,6 +199,7 @@ const Manager = () => {
                                 )}
                             </tbody>
                         </table>
+                        </div>
                     }
 
                 </div>
