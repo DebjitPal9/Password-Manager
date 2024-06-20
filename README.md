@@ -3,5 +3,6 @@
  Deployed using netlify
  Icon courtesy : Lordicons https://lordicon.com/
 
- ![image](https://github.com/DebjitPal9/Password-Manager/assets/63508896/219cb851-0f23-4193-9198-8d81439100f1)
+![image](https://github.com/DebjitPal9/Password-Manager/assets/63508896/4e21ea3f-d5c4-4288-b579-eb74cca051cb)
+
 
